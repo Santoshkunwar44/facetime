@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --primary_color: #2675F9;
+  --primary_bg: #040A20;
+  --light_bg:#2b324d69;
+}
+.App{
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background: var(--primary_bg);
+}
