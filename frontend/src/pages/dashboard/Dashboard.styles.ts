@@ -2,7 +2,7 @@ import {styled} from "styled-components"
 
 export const  DashboardWrapper = styled.div`
 
-padding: 2rem;
+padding: 2remfa;
 width:100%;
 .dashboardContainer{
     display: flex;

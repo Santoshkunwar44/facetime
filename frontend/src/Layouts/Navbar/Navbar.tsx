@@ -5,6 +5,7 @@ const Navbar = () => {
     <NavbarWrapper>
         <h1 className='appName'>
             faceTime
+            
         </h1>
         <div className="navRight">
 
