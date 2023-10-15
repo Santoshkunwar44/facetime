@@ -1,14 +1,9 @@
-import { useState } from "react";
 import { AuthWrapper } from "./Auth.styles"
 import {MdFace2} from "react-icons/md"
 import UserReview from "../../components/Dashboard/Auth/UsersReview/UserReview";
-import Signup from "../../components/Dashboard/Auth/Register/Signup/Signup";
+import { Outlet } from "react-router-dom";
 const Auth = () => {
-    const [authTab,setAuthTab] =useState("login")
-    const authTabMapping={
-        "login":<LoginTab/>,
-        "signup":<SignupTab/>
-    }
+ 
   return (
     <AuthWrapper>
     <div className="authContainer">
@@ -35,7 +30,7 @@ const Auth = () => {
                 <UserReview/>
         </div>
         <div className="mainContent">
-            <Signup/>
+            <Outlet/>
         </div>
     </div>
     </AuthWrapper>

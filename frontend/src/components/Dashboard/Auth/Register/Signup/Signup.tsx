@@ -1,9 +1,10 @@
+import { SignupWrapper } from "./Signup.styles"
 
 const Signup = () => {
   return (
-    <div>
+    <SignupWrapper>
         <div className="header">
-                <h1>Lets get started</h1>
+                <h1 className="headerText">Lets get started</h1>
         </div>
         <div className="signupInpuBoxWrapper">
             <div className="dualInputBox">
@@ -25,11 +26,15 @@ const Signup = () => {
               <div className="dualInputBox">
                 <div className="inputItem">
                     <label htmlFor="">Country</label>
-                    <select name="" id=""></select>
+                    <select name="" id="">
+                        <option value="">America</option>
+                    </select>
                 </div>
                   <div className="inputItem">
                     <label htmlFor="">State</label>
-                    <select name="" id=""></select>
+                    <select name="" id="">
+                        <option value="">California</option>
+                    </select>
                 </div>
             </div>
              <div className="inputItem">
@@ -37,7 +42,8 @@ const Signup = () => {
                     <input type="password" name="" id="" placeholder="password" />
                 </div>
         </div>
-    </div>
+        <button className="getStartedButton">Get Started</button>
+    </SignupWrapper>
   )
 }
 
