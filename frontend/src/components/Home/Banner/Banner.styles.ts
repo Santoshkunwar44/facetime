@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 2rem;
-height: calc(100vh - 90px);
+height: calc(100vh - 100px);
 position: relative;
 justify-content: center;
 .bannerBigText{

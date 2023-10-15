@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { BannerWrapper } from "./Banner.styles"
 
 const Banner = () => {
@@ -12,9 +13,11 @@ const Banner = () => {
             <p className="bannerDesc">Audio And video call with your loving ones 25 minutes call credit . <br />We offer interactive video calls</p>
         </div>
         <div className="buttonWrapper">
+          <Link to={"/dashboard"}>
           <button className="dark">
             Try Now 
           </button>
+          </Link>
           <button>
             Read More 
           </button>

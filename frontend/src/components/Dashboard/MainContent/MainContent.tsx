@@ -29,7 +29,9 @@ const callData=[
   calledAt:"33 minutes ago",
   type:"Video",
   duration:"1:33",
-  success:true
+  success:true,
+  isCallerMe:true, 
+
   
 
 },
@@ -41,7 +43,8 @@ const callData=[
   calledAt:"55 minutes ago",
   type:"Audio",
   duration:"0",
-  success:false
+  success:false,
+  isCallerMe:false
   
 
 },
@@ -53,7 +56,8 @@ const callData=[
   calledAt:"1 hour ago",
   type:"Video",
   duration:"0",
-  success:false
+  success:false,
+  isCallerMe:false
   
 
 },
@@ -65,7 +69,8 @@ const callData=[
   calledAt:"2 days ago",
   type:"Video",
   duration:"1:00",
-  success:true
+  success:true,
+  isCallerMe:true
 },
 
 

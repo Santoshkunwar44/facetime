@@ -27,6 +27,7 @@ padding: 10px;
         color: gray;
         font-size: 13px;
         letter-spacing: 1px;
+           color: rgba(128, 128, 128, 0.52);
     }
 }
 .creditBox{
@@ -43,11 +44,12 @@ padding: 10px;
 .userDescBox{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     p{
         font-size: 13px;
         color: gray;
         letter-spacing: 1px;
+           color: rgba(128, 128, 128, 0.52);
     }
 }
 .logoutbutton{

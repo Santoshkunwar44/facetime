@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom'
 import { NavbarWrapper } from './Navbar.styles'
 
 const Navbar = () => {
   return (
     <NavbarWrapper>
-        <h1 className='appName'>
+      <Link to={"/"}>
+      
+      <h1 className='appName'>
             faceTime
             
         </h1>
+      </Link>  
         <div className="navRight">
 
             <div className="navLinks">
@@ -17,10 +21,12 @@ const Navbar = () => {
 
         <div className="navButton">
          
-            <button>
+          <Link to={"/auth"}>
+            <button >
                 Sign in
             </button>
             
+          </Link>
         </div>
         </div>
     </NavbarWrapper>
