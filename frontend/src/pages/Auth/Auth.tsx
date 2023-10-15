@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AuthWrapper } from "./Auth.styles"
 import {MdFace2} from "react-icons/md"
 import UserReview from "../../components/Dashboard/Auth/UsersReview/UserReview";
+import Signup from "../../components/Dashboard/Auth/Register/Signup/Signup";
 const Auth = () => {
     const [authTab,setAuthTab] =useState("login")
     const authTabMapping={
@@ -34,7 +35,7 @@ const Auth = () => {
                 <UserReview/>
         </div>
         <div className="mainContent">
-
+            <Signup/>
         </div>
     </div>
     </AuthWrapper>

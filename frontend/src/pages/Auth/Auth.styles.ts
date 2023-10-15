@@ -14,7 +14,7 @@ height: 100vh;
 
     .sideContent{
         background-color: var(--primary_color);
-        flex: 4.5;
+        flex: 4;
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -43,19 +43,22 @@ height: 100vh;
             flex-direction: column;
             gap: 1rem;
             .bigText{
-                font-size: 1rem;
+                font-size: 1.4rem;
                 letter-spacing: 2px;
-                line-height: 45px;
+                line-height: 55px;
             }
             .mainDesc{
-                letter-spacing: 1px;
+                letter-spacing: 2px;
                 line-height: 25px;
+                font-size: 13px;
 
             }
         }
     }
     .mainContent{
-        flex:7.5;
+        flex:8;
+        padding: 2rem;
+        
     }
 }
 
