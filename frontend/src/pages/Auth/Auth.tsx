@@ -19,9 +19,9 @@ const Auth = () => {
                 </div>
                 <div className="mainSidebarContent">
                  <div className="bigText">
-                    <h1>Let's Setup </h1>
-                    <h1>Your faceTime </h1>
-                    <h1>Profile Now !</h1>
+                    <h1> Continue </h1>
+                    <h1>From Where  </h1>
+                    <h1>You Left !</h1>
                  </div>
                  <p className="mainDesc">
                     Create account with faceTime and enjoyy the 25 min credit just after registering . We provide effective video calling solutions

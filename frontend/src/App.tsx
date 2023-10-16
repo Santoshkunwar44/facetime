@@ -5,6 +5,7 @@ import Dashboard from './pages/dashboard/Dashboard'
 import Auth from './pages/Auth/Auth'
 import Signup from './components/Dashboard/Auth/Register/Signup/Signup'
 import Login from './components/Dashboard/Auth/Login/Login'
+import Call from './pages/Call/Call'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route  path="/" element={<Home/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/call/:id' element={<Call/>}/>
       <Route path='/authenticate' element={<Auth/>}>
         <Route path='signup' element={<Signup/>}/>
         <Route path='login' element={<Login/>}/>

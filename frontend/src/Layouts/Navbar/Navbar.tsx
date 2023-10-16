@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <div className="navButton">
          
-          <Link to={"/auth"}>
+          <Link to={"/authenticate/login"}>
             <button >
                 Sign in
             </button>
