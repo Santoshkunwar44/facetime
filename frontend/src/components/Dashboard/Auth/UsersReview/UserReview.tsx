@@ -1,4 +1,3 @@
-import React from 'react'
 import { UserReviewWrapper } from './UserReview.styles'
 import { Rating } from '@mui/material';
 

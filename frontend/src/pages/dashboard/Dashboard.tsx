@@ -1,4 +1,3 @@
-import React from 'react'
 import { DashboardWrapper } from './Dashboard.styles'
 import Navbar from '../../Layouts/Navbar/Navbar'
 import Sidebar from '../../components/Dashboard/Sidebar/Sidebar'

@@ -5,40 +5,46 @@ import {BsFillMicFill} from "react-icons/bs"
 import {HiMiniVideoCamera} from "react-icons/hi2"
 import { useEffect, useRef, useState } from "react"
 import { useLocation } from "react-router-dom"
-const Call = () => {
-    const [callTab,setCallTab]=useState("outgoing")
+const Call: React.FC = () => {
+  const [callTab, setCallTab] = useState<CallTabs>("outgoing");
 
-    const callTabMapping= {
-        "outgoing":<Calling/>,
-        "incoming":<InComing/>,
-        "videoCall":<VideoCall/>,
-        "audioCall":<AudioCall/>
-        
-    }
+  type CallTabs = "outgoing" | "incoming" | "videoCall" | "audioCall";
 
-    const search  =  useLocation().search
+  const callTabMapping: { [key in CallTabs]: React.ReactNode } = {
+    "outgoing": <Calling />,
+    "incoming": <InComing />,
+    "videoCall": <VideoCall />,
+    "audioCall": <AudioCall />
+  };
 
-    
-    useEffect(()=>{
-        setInterval(()=>{
-            let type = search.split("=")[1]
-            if(type==="video"){
-                setCallTab("videoCall")
-            }else{
-                setCallTab("audioCall")
-            }
-        },2000)
-    },[])
-  return (
+  const search = useLocation().search;
 
-   <>
-    {callTabMapping[callTab]}
-   </>
-    
-  )
-}
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      let type = search.split("=")[1];
+      if (type === "video") {
+        setCallTab("videoCall");
+      } else {
+        setCallTab("audioCall");
+      }
+    }, 2000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [search]);
+
+  return <>{callTabMapping[callTab]}</>;
+};
 
 export default Call;
+
+
+
+
+
+
+
 
 const Calling=()=>{
 

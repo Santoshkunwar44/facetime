@@ -1,6 +1,6 @@
 import { UserItemWrapper } from './UserItem.styles'
 import { IoVideocam } from 'react-icons/io5'
-import { AiFillAudio, AiFillPhone } from 'react-icons/ai'
+import {  AiFillPhone } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 const UserItem = () => {

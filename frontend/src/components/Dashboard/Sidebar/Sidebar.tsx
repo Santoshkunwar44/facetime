@@ -1,4 +1,3 @@
-import React from 'react'
 import { SidebarWrapper } from './Sidebar.styles'
 import ProfileCard from '../ProfileCard/ProfileCard'
 

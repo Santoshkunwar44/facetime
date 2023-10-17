@@ -48,35 +48,3 @@ const Auth = () => {
 
 export default Auth;
 
-
-const SignupTab =()=>{
-    return <>
-    <div className="inputBox">
-            <input type="text" name="text" placeholder="username" />
-            </div>    
-    <div className="inputBox">
-            <input type="text" name="email" placeholder="email address" />
-            </div>    
-        <div className="inputBox">
-            <input type="password" name="password" placeholder="password" />
-        </div>
-           <div className="inputBox">
-            <input type="password" name="confirmPassword" placeholder="confirm password" />
-        </div>
-        <button className="getInButton">LOGIN</button>
-    </>
-}
-
-
-
-const LoginTab =()=>{
-    return <>
-        <div className="inputBox">
-            <input type="text" name="email" placeholder="email address" />
-            </div>    
-        <div className="inputBox">
-            <input type="password" name="password" placeholder="password" />
-        </div>
-        <button className="getInButton">LOGIN</button>
-    </>
-}
