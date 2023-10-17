@@ -15,3 +15,7 @@
   color: white;
   background: var(--primary_bg);
 }
+
+a{
+  text-decoration: none;
+}

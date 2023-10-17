@@ -1,6 +1,6 @@
 import { CallItemWrappper } from './CallItem.styles'
 import {IoVideocam} from "react-icons/io5"
-import {AiFillAudio} from "react-icons/ai"
+import {AiFillAudio, AiFillPhone} from "react-icons/ai"
 import {LuPhoneOutgoing,LuPhoneIncoming} from "react-icons/lu"
 const CallItem = ({call}) => {
 
@@ -34,7 +34,7 @@ const CallItem = ({call}) => {
         <div className="iconBox">
 
         {
-          call?.type==="Video"? <IoVideocam className="videoTypeIcon"/>:<AiFillAudio className="videoTypeIcon"/>
+          call?.type==="Video"? <IoVideocam className="videoTypeIcon"/>:<AiFillPhone className="videoTypeIcon"/>
         }
         </div>
             

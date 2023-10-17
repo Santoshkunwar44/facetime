@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { SignupWrapper } from "./Signup.styles"
 
 const Signup = () => {
@@ -43,6 +44,10 @@ const Signup = () => {
                 </div>
         </div>
         <button className="getStartedButton">Get Started</button>
+        <Link to={"/authenticate/login"}>
+        
+         <p className="bottomText">Already have account ?</p>
+        </Link>
     </SignupWrapper>
   )
 }

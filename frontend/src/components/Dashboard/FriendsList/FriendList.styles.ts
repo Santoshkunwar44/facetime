@@ -5,6 +5,9 @@ export const FriendListWrapper=styled.div`
 padding: 1.5rem;
 flex: 3;
 border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 1rem;
 .friendListHeader{
     h1{
         color: var(--primary_color);

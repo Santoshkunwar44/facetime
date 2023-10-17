@@ -54,9 +54,16 @@ margin-top: 2rem;
     letter-spacing: 1px;
     outline: none;
     background-color: var(--primary_color);
+    cursor: pointer;
+}
+.registerButton{
+    background-color: transparent !important;
+    border: 1px solid var(--primary_color) !important;
+    color: var(--primary_color);
+    width: 100%;
 }
 .forgotPasswordText{
-    color: var(--light_gray);
+    color: var(--primary_color);
     margin: auto;
     display: block;
     letter-spacing: 1px;

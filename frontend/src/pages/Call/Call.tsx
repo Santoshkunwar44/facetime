@@ -3,11 +3,38 @@ import {   AudioCallWrapper, CallingWrapper, IncomingWrapper } from "./Call.styl
 import {BiSolidPhoneCall} from "react-icons/bi"
 import {BsFillMicFill} from "react-icons/bs"
 import {HiMiniVideoCamera} from "react-icons/hi2"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
+import { useLocation } from "react-router-dom"
 const Call = () => {
-  return (
+    const [callTab,setCallTab]=useState("outgoing")
+
+    const callTabMapping= {
+        "outgoing":<Calling/>,
+        "incoming":<InComing/>,
+        "videoCall":<VideoCall/>,
+        "audioCall":<AudioCall/>
+        
+    }
+
+    const search  =  useLocation().search
+
     
-    <VideoCall/>
+    useEffect(()=>{
+        setInterval(()=>{
+            let type = search.split("=")[1]
+            if(type==="video"){
+                setCallTab("videoCall")
+            }else{
+                setCallTab("audioCall")
+            }
+        },2000)
+    },[])
+  return (
+
+   <>
+    {callTabMapping[callTab]}
+   </>
+    
   )
 }
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ProfileCardWrapper } from './ProfileCard.styles'
 
 const ProfileCard = () => {
@@ -25,9 +26,12 @@ const ProfileCard = () => {
             <p>Total calls : 11</p>
             <p>Call Duration : 22 min</p>
         </div>
+       <Link to={"/"}>
+       
         <button className='logoutbutton'>
             Logout
         </button>
+       </Link>
     </ProfileCardWrapper>
   )
 }

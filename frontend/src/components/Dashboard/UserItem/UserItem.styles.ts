@@ -10,7 +10,17 @@ padding-bottom: 1rem  ;
 
 
 .userLeft{
-
+    display: flex;
+    gap: 10px;
+    align-items: center;
+.userImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary_color);
+    padding: 2px;
+}
     .userInfo{
         .username{
             color: var(--primary_color);

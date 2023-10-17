@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { LoginWrapper } from "./Login.styles"
 
 const Login = () => {
@@ -26,6 +27,11 @@ const Login = () => {
             Continue to faceTime
         </button>
             <p className="forgotPasswordText">Forgot password ?</p>
+           <Link to={"/authenticate/signup"}>
+            <button className="loginButton registerButton">
+            Create New Account 
+        </button>
+           </Link>
     </LoginWrapper>
   )
 }

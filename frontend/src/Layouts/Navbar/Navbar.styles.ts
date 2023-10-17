@@ -8,9 +8,19 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:0 1rem;
-.appName{
-    color: var(--primary_color);
-    letter-spacing:2px;
+.logoBox{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    svg{
+        font-size: 1.7rem;
+        color: var(--primary_color);
+    }
+    .appName{
+        color: var(--primary_color);
+        letter-spacing:2px;
+        
+    }
 }
 
 .navRight{
@@ -40,6 +50,12 @@ padding:0 1rem;
             letter-spacing: 1px;
             color: white;
             background-color: var(--primary_color);
+        }
+        .freeCreditBtn{
+            background-color: transparent !important;
+            color: var(--primary_color) !important;
+            border: 1px solid var(--primary_color) !important;
+
         }
     }
 }

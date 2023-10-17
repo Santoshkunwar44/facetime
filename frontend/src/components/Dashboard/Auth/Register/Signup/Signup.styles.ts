@@ -69,4 +69,13 @@ margin: auto;
     outline: none;
     background-color: var(--primary_color);
 }
+.bottomText{
+    margin: auto;
+    display: block;
+    color: var(--primary_color);
+
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
 `
